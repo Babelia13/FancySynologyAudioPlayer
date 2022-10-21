@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main colors -->
+    <color name="amber">#FFCC80</color>
+    <color name="purple500">#9C27B0</color>
+    <color name="purple200">#B39DDB</color>
+    <color name="deep_purple">#57236D</color>
+
+    <color name="colorPrimary">@color/purple500</color>
+    <color name="colorPrimaryDark">@color/purple200</color>
+    <color name="colorAccent">@color/amber</color>
+    <color name="backgroundColor">@color/deep_purple</color>
+
+</resources>

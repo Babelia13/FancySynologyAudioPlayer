@@ -1,0 +1,36 @@
+/*
+ *   Copyright 2022 Babelia
+ *
+ *   Licensed under the Apache License, Version 2.0 (the "License");
+ *   you may not use this file except in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+package com.babelia.fansyn.network.models
+
+/**
+ * Response retrieved from the Synology API when asking for the Audio Station album songs.
+ */
+@Suppress("ConstructorParameterNaming")
+data class AudioStationAlbumSongsResponse(
+    val `data`: AudioStationAlbumSongsResponseData,
+    val error: ErrorResponse? = null,
+    val success: Boolean
+)
+
+/**
+ * Representation of the data retrieved in [AudioStationAlbumSongsResponse].
+ */
+data class AudioStationAlbumSongsResponseData(
+    val offset: Int,
+    val songs: List<NetworkAudioStationSong>,
+    val total: Int
+)

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/opensaucesans</item>
+        <item name="fontFamily">@font/opensaucesans</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+    </style>
+
+    <style name="LoginTheme" parent="Theme.MaterialComponents.NoActionBar">>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+    </style>
+</resources>
